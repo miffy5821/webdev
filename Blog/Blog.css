@@ -57,148 +57,87 @@
     border: 1px solid gray;
 }
 .content{
+    margin-top: 50px;
     width:100%;
-    height:2550px;
+    height:5300px;
 }
-.floor1 .f1{
-    width:1008px;
-    height:722px;
+.main-content{
+    width:1317px;
+    height:5300px;
     margin-left:auto;
     margin-right:auto;
 }
-.floor2 .f2{
-    width:1024px;
-    height:1010px;
-    margin-left:auto;
-    margin-right:auto;
-
-}
-.floor3 .f3{
-    width:1024px;
-    height:900px;
-    margin-left:auto;
-    margin-right:auto;
-}
-.text1{
-    margin-top:50px;
-    font-weight: 400;
-    font:32px / 1.22222 "Google Sans",sans-serif;
-    margin-bottom:32px;
-    position:relative;
-    left:10px;
-
-}
-.text2{
-    font:400 18px / 1.77778 "Roboto",sans-serif;
-    margin-bottom:36px;
-}
-.text3{
-    font:400 36px / 1.22222 "Google Sans",sans-serif;
-    margin-top:64px;
-    margin-bottom:36px;
-}
-.text4{
-    font:400 18px / 1.77778 "Roboto",sans-serif;
-    margin-bottom:32px;
-    margin-top:32px;
-}
-.text5{
-    font-weight: 500;
-    text-align: center;
-    font: 36px / 1.22222 "Google Sans",sans-serif;
-    margin-top: 64px;
-    margin-bottom: 32px;
-}
-.f1-img{
-    width:380px;
-    height:301px;
-    position:relative;
-    top:-400px;
-    left:600px;
-}
-.f2-box{
-    width:1010px;
-    height:100px;
-}
-.f2-box li{
-    display:inline-block;
-    font:400 18px / 1.77778 "Roboto",sans-serif;
-}
-.f2-video{
-    background-image: url(https://i.ytimg.com/vi/3bKMnYJzrqI/sddefault.jpg);
-    width:460px;
-    height:259px;
-    position:relative;
-    top:-300px;
-    left:500px;
-    -webkit-background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-.f3-left{
-    width:410px;
-    height:398px;
-    padding:24px;
-    border: 1px solid #dadce0;
-    border-radius: 3px;
-    margin: 24px;
+.content-box{
+    width:367px;
+    height:590px;
+    padding:32px;
     float:left;
 }
-.f3-title{
-    font: 500 20px / 1.2 "Google Sans",sans-serif;
-    margin-bottom: 16px;
+.content-img{
+    width:365px;
+    height:240px;
 }
-.f3-describe{
-    font: 400 18px / 1.77778 "Roboto",sans-serif;
+.content-title{
+    font: 400 24px / 1.33333 "Google Sans",sans-serif;
+    margin-top:10px;
 }
-.f3-box{
-    width:389px;
-    height:398px;
-    margin-left:20px;
-    font:400 18px / 1.5 "Roboto",sans-serif;
-}
-.f3-box li{
-    padding-left:20px;
-    padding-top:15px;
+.content-person{
+    margin-top:10px;
+    width:366px;
+    height:40px;
 
 }
-.f3-btn1{
-    color:blue;
-    font:500 0.875rem/2.25rem "Roboto",sans-serif;
-    height:56px;
+.person-img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+.time1{
+    font: 400 16px / 1.5 "Roboto",sans-serif;
+    width:200px;
+    height:17px;
+    color:#424141;
     position:relative;
-    top:-150px;
-    left:150px;
+    top:-45px;
+    left:50px;
 }
-.f3-btn2{
-    color:blue;
-    font:500 0.875rem/2.25rem "Roboto",sans-serif;
-    height:56px;
+.time2{
+    font: 400 16px / 1.5 "Roboto",sans-serif;
+    width:200px;
+    height:17px;
+    color:gray;
     position:relative;
-    top:-150px;
-    left:150px;
+    top:-40px;
+    left:50px;
 }
-.f3-right{
-    width:410px;
-    height:398px;
-    padding:24px;
-    border: 1px solid #dadce0;
-    border-radius: 3px;
-    margin: 24px;
-    float:right;
+.content-describe{
+    margin-top:10px;
+    font: 400  16px  / 1.5 "Roboto",sans-serif;
+    color:gray;
 }
-.floor4{
+.content-box span{
+    font-size: 14px;
+    position:relative;
+    top:20px;
+    border:1px solid #d2cece;
+    border-radius:20px;
+    padding:8px;
+}
+
+
+
+
+.footder{
     width:100%;
     height:600px;
 }
-.floor4-1{
+.footder4-1{
     margin-top:20px;
     margin-left:30px;
     width:100%;
     height:300px;
 }
-.floor4-2{
+.footder4-2{
     width:100%;
     height:280px;
 }
