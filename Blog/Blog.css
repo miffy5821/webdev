@@ -91,6 +91,7 @@
     width:40px;
     height:40px;
     border-radius:50%;
+    background-image:src();
 }
 .time1{
     font: 400 16px / 1.5 "Roboto",sans-serif;
