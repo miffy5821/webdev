@@ -112,6 +112,8 @@
 .con1 li{
     width: 416px;
     height:360px;
+    float: left;
+    margin: 5px;
     padding: 30px;
     border: 1px solid black;
     list-style: none;
@@ -127,6 +129,8 @@
     width: 416px;
     height:360px;
     padding: 30px;
+    float: left;
+    margin: 5px;
     border: 1px solid black;
     list-style: none;
     display: inline-block;
@@ -140,6 +144,8 @@
 .con3 li{
     width: 416px;
     height:360px;
+    float: left;
+    margin: 5px;
     padding: 30px;
     border: 1px solid black;
     list-style: none;
