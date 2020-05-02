@@ -8,11 +8,11 @@
 <body>
 <div class="nav">
     <img  class="logo" src="./Measure-img/lockup.svg" >
-    <ul class="nav-daohang">
-        <li>Learn</li>
-        <li>Measure</li>
-        <li>Blog</li>
-        <li>About</li>
+    <ul id="nav" class="nav-daohang">
+        <li class ="cross-nav" onmouseover="navStyle()" onmouseout=" navLeave()"><a href="../Learn/learn.html">Learn</a></li>
+        <li class ="cross-nav nav-click" onmouseover="navStyle()" onmouseout=" navLeave()"><a href="Measure.html">Measure</a></li>
+        <li class ="cross-nav" onmouseover="navStyle()" onmouseout=" navLeave()"><a href="../Blog/Blog.html">Blog</a></li>
+        <li class ="cross-nav" onmouseover="navStyle()" onmouseout=" navLeave()"><a href="../About/About.html">About</a></li>
     </ul>
     <div class="nav-search">
         <img class="search-img" src="./Measure-img/search.jpg">
@@ -26,19 +26,21 @@
 </div>
 <div class="content">
     <div class="content1">
-        <input class="ctn-input" type="url" placeholder="Enter a web page URL">
-        <button class="ctn-btn1">SWITCH URL</button>
-        <button class="ctn-btn1"> RUN AUDIT</button>
-        <div> Performance</div>
-        <div></div>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div>
-            <span></span><span></span><span></span><span></span><span></span>
+        <input class="ctn-input"  onClick="onClickInput()" type="url" placeholder="Enter a web page URL">
+        <button class="ctn-btn1 btn"  onClick="onClickInput()" onmouseover="onClick()" onmouseout=" leaveBtn()">SWITCH URL</button>
+        <button class="ctn-btn2 btn"  onmouseover="onClick()" onmouseout=" leaveBtn()"> RUN AUDIT</button>
+        <div class="content-div"><span>Performance</span> <div>0</div></div>
+        <div class="content-div"> <span>Accessibility</span> <div>0</div></div>
+        <div class="content-div"><span>Best Practices</span> <div>0</div></div>
+        <div class="content-div"><span> SEO </span><div>0</div></div>
+        <div class="content-data">
+            <div>Score scale: </div>
+            <div class="colorRed"></div>
+            <div class="contentWidth">0-49</div>
+            <div class="colorOrange"></div>
+            <div class="contentWidth">50-89</div>
+            <div class="colorGreen"></div>
+            <div>90-100</div>
         </div>
     </div>
     <div class="contentFloorTwo">
@@ -65,22 +67,22 @@
         tool for improving the quality of web pages.<br> Lighthouse will audit your site in the following categories:</p>
     <div class="contentFloorThree">
         <div class="ctn-f3-box">
-            <img src="./Measure-img/1.svg">
+            <img  class="ctn-boxImg"  src="./Measure-img/1.svg">
             <h3>Performance</h3>
             <p>Audits for metrics like first paint and time to interactive to determine lag.</p>
         </div>
         <div class="ctn-f3-box">
-            <img src="./Measure-img/2.svg">
+            <img class="ctn-boxImg" src="./Measure-img/2.svg">
             <h3>Best Practices</h3>
             <p>Looks for everything from HTTPS usage to correct image aspect ratios.</p>
         </div>
         <div class="ctn-f3-box">
-            <img src="./Measure-img/3.svg">
+            <img class="ctn-boxImg"  src="./Measure-img/3.svg">
             <h3>SEO</h3>
             <p>Checks for best practices to ensure your site is discoverable.</p>
         </div>
         <div class="ctn-f3-box">
-            <img src="./Measure-img/4.svg">
+            <img class="ctn-boxImg"  src="./Measure-img/4.svg">
             <h3>Accessibility</h3>
             <p>Checks for common issues that may prevent users from accessing your content.</p>
         </div>
@@ -136,5 +138,53 @@
             <span class="addTextColor">Google Developers Site Policies</span>.</p>
     </div>
 </div>
+
+ <script>
+    let  li=document.getElementById("nav").getElementsByTagName("li"),
+         btn=document.getElementsByClassName("btn"),
+        input=document.getElementsByClassName("ctn-input");
+
+
+        //鼠标经过导航的效果
+        function navStyle(s) {
+            li.addClass="nav-style";
+        }
+        navStyle();
+        //鼠标离开导航的效果
+        function navLeave(l) {
+             li.removeClass="nav-style";
+        }
+        navLeave();
+
+
+        //鼠标经过按钮的效果
+         function onClick(o){
+             btn.addClass="btn-style";
+         }
+         onClick();
+        //鼠标离开按钮的效果
+          function leaveBtn(b){
+              btn.removeClass="btn-style";
+          }
+         leaveBtn();
+
+        //input获得焦点的效果
+          function onClickInput() {
+              input.addClass="input-style";
+          }
+          onClickInput();
+        //点击switch URL键input获得焦点
+          function onClickBtn() {
+              input.addClass="input-style";
+           }
+           onClickBtn();
+        //input离开焦点的效果
+          function leaveInput() {
+            input.removeClass="input-style";
+          }
+           leaveInput();
+
+ </script>
+
 </body>
 </html>
