@@ -9,10 +9,10 @@
 <div class="nav">
     <img  class="logo" src="./Measure-img/lockup.svg" >
     <ul id="nav" class="nav-daohang">
-        <li class ="cross-nav" onmouseover="navStyle()" onmouseout=" navLeave()"><a href="../Learn/learn.html">Learn</a></li>
-        <li class ="cross-nav nav-click" onmouseover="navStyle()" onmouseout=" navLeave()"><a href="Measure.html">Measure</a></li>
-        <li class ="cross-nav" onmouseover="navStyle()" onmouseout=" navLeave()"><a href="../Blog/Blog.html">Blog</a></li>
-        <li class ="cross-nav" onmouseover="navStyle()" onmouseout=" navLeave()"><a href="../About/About.html">About</a></li>
+        <li class ="cross-nav" ><a href="../Learn/learn.html">Learn</a></li>
+        <li class ="cross-nav nav-click"><a href="Measure.html">Measure</a></li>
+        <li class ="cross-nav" ><a href="../Blog/Blog.html">Blog</a></li>
+        <li class ="cross-nav" ><a href="../About/About.html">About</a></li>
     </ul>
     <div class="nav-search">
         <img class="search-img" src="./Measure-img/search.jpg">
@@ -24,16 +24,21 @@
     <h1>Measure</h1>
     <p>See how well your website performs. Then, get tips to improve your user experience.</p>
 </div>
+
 <div class="content">
+    <div class="content-f1">
     <div class="content1">
-        <input class="ctn-input"  onClick="onClickInput()" type="url" placeholder="Enter a web page URL">
-        <button class="ctn-btn1 btn"  onClick="onClickInput()" onmouseover="onClick()" onmouseout=" leaveBtn()">SWITCH URL</button>
-        <button class="ctn-btn2 btn"  onmouseover="onClick()" onmouseout=" leaveBtn()"> RUN AUDIT</button>
+        <input class="ctn-input"  stype="url" placeholder="Enter a web page URL">
+        <button class="ctn-btn1 btn"  >SWITCH URL</button>
+        <button class="ctn-btn2 btn"  > RUN AUDIT</button>
+    </div>
+    <div class="content2">
         <div class="content-div"><span>Performance</span> <div>0</div></div>
         <div class="content-div"> <span>Accessibility</span> <div>0</div></div>
         <div class="content-div"><span>Best Practices</span> <div>0</div></div>
         <div class="content-div"><span> SEO </span><div>0</div></div>
-        <div class="content-data">
+    </div>
+    <div class="content-data">
             <div>Score scale: </div>
             <div class="colorRed"></div>
             <div class="contentWidth">0-49</div>
@@ -41,8 +46,9 @@
             <div class="contentWidth">50-89</div>
             <div class="colorGreen"></div>
             <div>90-100</div>
-        </div>
-    </div>
+     </div>
+    
+</div>
     <div class="contentFloorTwo">
         <div class="ctn-f2-box">
             <h3>1</h3>
@@ -139,52 +145,6 @@
     </div>
 </div>
 
- <script>
-    let  li=document.getElementById("nav").getElementsByTagName("li"),
-         btn=document.getElementsByClassName("btn"),
-        input=document.getElementsByClassName("ctn-input");
-
-
-        //鼠标经过导航的效果
-        function navStyle(s) {
-            li.addClass="nav-style";
-        }
-        navStyle();
-        //鼠标离开导航的效果
-        function navLeave(l) {
-             li.removeClass="nav-style";
-        }
-        navLeave();
-
-
-        //鼠标经过按钮的效果
-         function onClick(o){
-             btn.addClass="btn-style";
-         }
-         onClick();
-        //鼠标离开按钮的效果
-          function leaveBtn(b){
-              btn.removeClass="btn-style";
-          }
-         leaveBtn();
-
-        //input获得焦点的效果
-          function onClickInput() {
-              input.addClass="input-style";
-          }
-          onClickInput();
-        //点击switch URL键input获得焦点
-          function onClickBtn() {
-              input.addClass="input-style";
-           }
-           onClickBtn();
-        //input离开焦点的效果
-          function leaveInput() {
-            input.removeClass="input-style";
-          }
-           leaveInput();
-
- </script>
 
 </body>
 </html>

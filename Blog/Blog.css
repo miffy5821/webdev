@@ -1,12 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+
 }
 .nav{
     height:64px;
     width: 100%;
-    border: 1px solid black;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 2px 6px 2px rgba(60,64,67,0.15);
 }
 .logo{
     width: 125px;
@@ -16,24 +16,38 @@
     left:20px;
 }
 .nav-daohang{
-    height: 60px;
+    height: 64px;
     width: 560px;
     position: absolute;
     left:200px;
     list-style: none;
 }
+.nav-style{
+    box-shadow: 0 -2px 0 #3740ff inset;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+}
 .nav-daohang li{
-    height: 60px;
+    height: 64px;
     width: 80px;
+    text-align: center;
     line-height: 60px;
     font-family: "Roboto",sans-serif;
     display: inline-block;
+}
+.nav-daohang li:hover{
+    background-color: darkgray;
 }
 .nav-search{
     height: 40px;
     width:200px;
     position: relative;
-    left:1580px;
+    left:1180px;
     top:10px;
     border: 1px solid gray;
     border-radius:2px ;
@@ -50,12 +64,16 @@
 
 }
 .nav-btn{
-    height: 40px;
+    height:64px;
     width: 100px;
     position: absolute;
-    top:10px;
+    top:-1px;
     right: 10px;
-    border: 1px solid gray;
+    border: none;
+    background-color:white;
+}
+.nav-btn:hover{
+    background-color: darkgray;
 }
 .header{
     width: 896px;
@@ -86,7 +104,7 @@
     height:5300px;
 }
 .main-content{
-    width:1317px;
+    width:1332px;
     height:5300px;
     margin-left:auto;
     margin-right:auto;
@@ -95,7 +113,12 @@
     width:367px;
     height:590px;
     padding:32px;
+    margin-right:5px ;
     float:left;
+}
+.content-box:hover{
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 2px 6px 2px rgba(60,64,67,0.15);
+    border-radius: 10px;
 }
 .content-img{
     width:365px;
