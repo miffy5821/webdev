@@ -4,8 +4,17 @@
 }
 .nav{
     height:64px;
-    width: 100%;
-    border: 1px solid black;
+    cursor:pointer;
+    position: fixed;
+    top:0;
+    background-color:white ;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgba(60,64,67,0.3), 0 2px 2px 2px rgba(60,64,67,0.15);
+}
+.nav-div{
+    height:64px;
+    width: 1903px;
+
 }
 .logo{
     width: 125px;
@@ -15,18 +24,31 @@
     left:20px;
 }
 .nav-daohang{
-    height: 60px;
+    height: 64px;
     width: 560px;
     position: absolute;
     left:200px;
     list-style: none;
 }
 .nav-daohang li{
-    height: 60px;
+    height: 64px;
     width: 80px;
     line-height: 60px;
+    text-align: center;
     font-family: "Roboto",sans-serif;
     display: inline-block;
+}
+.nav-daohang li:hover{
+    background-color: darkgray;
+}
+a{
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+.nav-style{
+    box-shadow: 0 -2px 0 #3740ff inset;
 }
 .nav-search{
     height: 40px;
@@ -49,18 +71,22 @@
 
 }
 .nav-btn{
-    height: 40px;
+    height:64px;
     width: 100px;
     position: absolute;
-    top:10px;
+    top:0;
     right: 10px;
-    border: 1px solid gray;
+    border: none;
+    background-color:white;
 }
-
+.nav-btn:hover{
+    background-color: darkgray;
+}
 .header{
     width: 960px;
     height: 288px;
     padding:60px 32px 0 32px ;
+    margin-top:100px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -79,81 +105,102 @@
     left: 200px;
     margin-top: 10px ;
     margin-bottom: 10px ;
+    margin-left:90px;
+
 }
 .text-style{
     font:400 16px / 1.5 "Roboto",sans-serif;
+    width:200px;
+    height:21px;
+    padding-left: 30px;
     margin-top:10px;
 }
 .text-color{
     color:blue;
-}
-.con-img{
-    width:374px;
-    height:206px;
-    margin:20px;
-    border:1px solid gray;
+    margin-top:10px;
     background-color: #fbfafa;
 
 }
 .con-headline{
     font:24px "Google Sans",sans-serif;
     margin-top:10px;
+    margin-left:30px;
 }
 .con-describe{
     margin-top:10px;
+    margin-left:30px;
     font:16px "Roboto",sans-serif;
 }
+.con-img{
+    width:350px;
+    height:220px;
+    border:1px solid gray;
+    margin-top:10px;
+    margin-left:30px;
+}
 .con1{
-    width: 1500px;
-    height:1300px ;
+    width: 1450px;
+    height:1500px ;
     margin-left: auto;
     margin-right: auto;
 }
 .con1 li{
-    width: 416px;
-    height:360px;
+    width: 410px;
+    height:430px;
     float: left;
-    margin: 5px;
-    padding: 30px;
-    border: 1px solid black;
+    padding:20px;
+    margin:10px 20px 10px 10px;
     list-style: none;
     display: inline-block;
 }
+.con1 li:hover{
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 2px 6px 2px rgba(60,64,67,0.15);
+    border-radius: 10px;
+}
 .con2{
-    width: 1500px;
-    height:450px ;
+    width: 1450px;
+    height:500px ;
     margin-left: auto;
     margin-right: auto;
 }
 .con2 li{
-    width: 416px;
-    height:360px;
-    padding: 30px;
+    width: 410px;
+    height:430px;
     float: left;
-    margin: 5px;
-    border: 1px solid black;
+    padding:20px;
+    margin:10px 20px 10px 10px;
     list-style: none;
     display: inline-block;
 }
+.con2 li:hover{
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 2px 6px 2px rgba(60,64,67,0.15);
+    border-radius: 10px;
+}
 .con3{
-    width: 1500px;
+    width: 1450px;
     height:1080px ;
     margin-left: auto;
     margin-right: auto;
 }
 .con3 li{
-    width: 416px;
-    height:360px;
+    width: 410px;
+    height:430px;
     float: left;
-    margin: 5px;
-    padding: 30px;
-    border: 1px solid black;
+    padding:20px;
+    margin:10px 20px 10px 10px;
     list-style: none;
     display: inline-block;
+}
+.con3 li:hover{
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 2px 6px 2px rgba(60,64,67,0.15);
+    border-radius: 10px;
 }
 .xx{
     width: 64px;
     height: 2px;
+    margin-left:30px;
+    margin-top:10px;
+    margin-bottom:10px;
     background-color: blue;
 
 }
