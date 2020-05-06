@@ -129,6 +129,7 @@ a{
 .content-img{
     width:365px;
     height:240px;
+    object-fit: cover;
 }
 .content-title{
     font: 400 24px / 1.33333 "Google Sans",sans-serif;
@@ -190,7 +191,7 @@ a{
     top:20px;
     border:1px solid #d2cece;
     border-radius:20px;
-    padding:8px;
+    padding:8px 10px;
 }
 
 
