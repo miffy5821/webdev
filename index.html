@@ -10,17 +10,17 @@
 <body>
     <div class="nav">
         <div class="nav-div">
-            <a href="../shouye/index.html"> <img  class="logo" src="./shouye-img/lockup.svg" ></a>
+            <a href="/index.html"> <img  class="logo" src="./shouye-img/lockup.svg" ></a>
             <ul class="nav-daohang">
-            <li><a href="../Learn/learn.html">Learn</a></li>
-            <li><a href="../Measure/Measure.html">Measure</a></li>
-            <li><a href="../Blog/Blog.html">Blog</a></li>
-            <li><a href="../About/About.html">About</a></li>
+            <li><a href="/Learn/learn.html">Learn</a></li>
+            <li><a href="/Measure/Measure.html">Measure</a></li>
+            <li><a href="/Blog/Blog.html">Blog</a></li>
+            <li><a href="/About/About.html">About</a></li>
         </ul>
 
-        <div class="nav-search">
-            <img class="search-img" src="./shouye-img/search.jpg">
-            <input class="search-input" required="search">
+        <div class="nav-search" id="nav-search">
+            <img class="search-img" src="./shouye-img/search.png">
+            <input class="search-input" id="search-input" placeholder="Search">
         </div>
         <button class="nav-btn"> SIGN IN </button>
         </div>
@@ -45,7 +45,7 @@
 
         <div class="floor2">
             <ul class="f2">          
-                <li class="f2-cross f2-c1">                         
+                <li class="f2-cross ">                         
                         <img class="f2-img" src="./shouye-img/hero.jpg">         
                         <h3 class="text-5">Monitor your web page's total memory usage with measureMemory()</h3>                  
                         <div class="f2-user">             
@@ -54,7 +54,7 @@
                         <p class="text-6">Learn how to measure memory usage of your web page in production to detect regressions.</p>           
                         <span class="f2-btn">javascript</span>                                     
                 </li>      
-                <li class="f2-cross f2-c2">                                     
+                <li class="f2-cross">                                     
                         <img class="f2-img" src="./shouye-img/hero (1).jpg">                
                         <h3  class="text-5">Making your website "cross-origin isolated" using COOP and COEP</h3>                      
                         <div class="f2-user">                  
@@ -64,7 +64,7 @@
                                 features like SharedArrayBuffer, performance.measureMemory(), and the JS Self-Profiling API.</p>                  
                         <span class="f2-btn">Security </span>                                 
                 </li>       
-                <li class="f2-cross f2-c3">                                       
+                <li class="f2-cross">                                       
                         <img class="f2-img" src="./shouye-img/hero (2).jpg">                  
                         <h3  class="text-5">web.dev engineering blog #1: How we build the site and use Web Components</h3>                          
                         <div class="f2-user">                    
@@ -130,12 +130,13 @@
         <div class="f3-foot">
             <h3 class="f3-foot-title">SAVE YOUR PROGRESS</h3>
             <p class="f3-foot-presentation">See how your website performs over time, and keep track as you learn on your own schedule.</p>
-            <span class="f3-foot-btn">TEST MY SITE </span>
+            <div class="f3-foot-btn">TEST MY SITE </div>
         </div> 
         <hr>
     </div>
      <div class="floor4">
         <div class="floor4-1">
+            <div class="f4-1">
             <div class="f4-1-1">
                 <h3 class="f4-title">Contribute</h3>
                 <ul class="f4-compile">
@@ -162,6 +163,7 @@
                 </ul>
             </div>
         </div>
+        </div>
         <hr>
         <div class="floor4-2">
             <img  class="f4-2-img" src="./shouye-img/lockup-color.png" >
@@ -179,4 +181,15 @@
         </div>
     </div>
 </body>
+<script>
+    let navSearch = document.getElementById('nav-search');
+    let searchInput = document.getElementById('search-input');
+
+    searchInput.onfocus = function(){
+        navSearch.classList.add('focus-visible');
+    }
+    searchInput.onblur = function(){
+        navSearch.classList.remove('focus-visible');
+    }
+</script>
 </html>
