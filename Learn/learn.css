@@ -111,13 +111,15 @@ a{
     font-size:16px;
     margin-top: 20px;
 }
+.tile{
+    width: 1450px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .cot-title{
     font: 20px "Google Sans",sans-serif;
     width: 300px;
-    margin-top: 10px ;
-    margin-bottom: 10px ;
-    margin-left:90px;
-
+    margin-left:60px;
 }
 .text-style{
     font:400 16px / 1.5 "Roboto",sans-serif;
