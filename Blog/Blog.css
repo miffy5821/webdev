@@ -50,16 +50,23 @@ a{
     display: inline-block;
 }
 .nav-daohang li:hover{
-    background-color: darkgray;
+    background-color: #f1f3f4;
 }
 .nav-search{
     height: 40px;
     width:200px;
-    position: absolute;
-    right: 127px;
+    position: absolute;;
+    right:127px ;
     top:10px;
-    border: 1px solid gray;
+    background-color:#f1f3f4;
     border-radius:2px ;
+}
+.focus-visible{
+    width: 1200px;
+    height: 40px;
+    border: none;
+    z-index: 200;
+    box-shadow: 0 2px 0 0 #3fc4ff;
 }
 .search-img{
     height: 25px;
@@ -70,6 +77,11 @@ a{
 }
 .search-input{
     border: none;
+    height: 40px;
+    margin-left: 45px;
+    background-color:#f1f3f4;
+    outline: none;
+    font-size: 14px;
 }
 .nav-btn{
     height:64px;
@@ -81,7 +93,7 @@ a{
     background-color:white;
 }
 .nav-btn:hover{
-    background-color: darkgray;
+    background-color: #f1f3f4;
 }
 .header{
     width: 896px;

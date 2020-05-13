@@ -15,9 +15,9 @@
         <li class ="cross-nav" ><a href="../Blog/Blog.html">Blog</a></li>
         <li class ="cross-nav" ><a href="../About/About.html">About</a></li>
     </ul>
-    <div class="nav-search">
+    <div class="nav-search" id="nav-search">
         <img class="search-img" src="./Measure-img/search.png">
-        <input class="search-input">
+        <input class="search-input" id="search-input">
     </div>
     <button class="nav-btn"> SIGN IN </button>
     </div>
@@ -146,5 +146,16 @@
         <span class="addTextColor">Google Developers Site Policies</span>.</p>
     </div>
 </div>
+<script>
+    let navSearch = document.getElementById('nav-search');
+    let searchInput = document.getElementById('search-input');
+
+    searchInput.onfocus = function(){
+        navSearch.classList.add('focus-visible');
+    }
+    searchInput.onblur = function(){
+        navSearch.classList.remove('focus-visible');
+    }
+</script>
 </body>
 </html>
